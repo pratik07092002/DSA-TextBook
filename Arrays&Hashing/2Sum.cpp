@@ -1,11 +1,7 @@
 
-/*
-20-07-25
-2 Sum Problem
-Sample Input --> [2,7,11,15] , Target --> 9
 
-Output --> [0,1]
-*/
+// 20-07-25
+
 #include <bits/stdc++.h>
 using namespace std;
 // Brute Force
