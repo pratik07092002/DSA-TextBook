@@ -24,6 +24,18 @@ for (int i = 0; i < n; i++)
     return m;
 
 }
+
+int missingNumber(vector<int>& nums){
+    int n = nums.size();
+    int sum = n*(n+1)/2;
+    int total = 0;
+    for (int i = 0; i < n; i++)
+    {
+        total = total + nums[i];
+    }
+    int answer =  sum - total;
+    return answer;
+}
 int main(int argc, char const *argv[])
 {
     vector<int> nums = {1,0,3};
