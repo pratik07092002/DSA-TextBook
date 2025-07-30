@@ -4,7 +4,7 @@ using namespace std;
 int ConsecutiveOnes(vector<int>& nums){
    int total = 0;
    int maxv = 0;
-   for (int i = 1; i < nums.size(); i++)
+   for (int i = 0; i < nums.size(); i++)
    {
     if(nums[i] == 1 ){
 total++;
@@ -19,6 +19,7 @@ total = 0;
 int main(int argc, char const *argv[])
 {
     vector<int> nums = {1,1,0,0,1,1,1,1,1,0};
+
     int answer = ConsecutiveOnes(nums);
     cout<<answer;
 

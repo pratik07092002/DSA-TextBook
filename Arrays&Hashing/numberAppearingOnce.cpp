@@ -15,6 +15,13 @@ for( const auto& pair : umap){
 }
    return -1;
 }
+int optimalSolutionXor(vector<int>& nums){
+        int answer = 0;
+    for (int num : nums) {
+        answer ^= num;
+    }
+    return answer;
+}
 int main(int argc, char const *argv[])
 {
     vector<int> nums = {1,2,3,4,5,6};
