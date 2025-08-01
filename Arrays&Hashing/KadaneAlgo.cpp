@@ -5,7 +5,6 @@ int maxSubArray(vector<int>& nums){
     int maxSum =nums[0];
     int currentSum = nums[0];
   
-    int tempstart = 0;
     for (int i = 0; i < nums.size(); i++)
     {
       currentSum = max(nums[i], currentSum + nums[i]);
