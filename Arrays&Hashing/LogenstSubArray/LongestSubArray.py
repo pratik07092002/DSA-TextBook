@@ -10,7 +10,7 @@ def logestSubArrayBruteForce(nums , target) :
 
             if current_sum == target:
                 max_len = max(max_len,j-i +1)
-    return max_len
+    return max_len 
 
 def longestSubArratHashing(nums, target):
     my_map = {}
